@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jacarés</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <script src="tabs.js"></script>
+</head> 
+
+<body>
+    <!--Modal-->
+    <div id="fact-modal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top">
+            <header class="w3-container w3-black">
+                <span onclick="closeModal()" class="w3-button w3-display-topright">&times;</span>
+                <h2>🐊</h2>
+            </header>
+
+            <div class="w3-container">
+                <p id="fact-inner"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Encapsular página num container-->
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button tablink w3-pink"
+            onclick="swapTab(event, 'characteristics')">Características</button>
+        <button class="w3-bar-item w3-button tablink" onclick="swapTab(event, 'geo-distribution')">Distribuição
+            Geográfica</button>
+        <button class="w3-bar-item w3-button" onclick="getFact()">Facto aleatório</button>
+    </div>
+
+    <div id="characteristics" class="alligator w3-container w3-animate-bottom">
+        <h2>Principais características</h2>
+        <p>
+            Os jacarés são animais pertencentes à ordem dos <a href="https://pt.wikipedia.org/wiki/Crocodylia">crocodilianos</a>.
+            São muito parecidos com os crocodilos, mas distinguem-se pelas seguintes caracteristicas:
+        </p>
+        <ul>
+            <li>Cabeça mais curta e larga</li>
+            <li>Têm membranas interdigitais nos polegares das patas traseiras</li>
+            <li>Os dentes caninos não saiem para fora quando têm a boca fechada</li>
+        </ul>
+        <p>O tamanho dos jacarés varia entre 1,2 metros e pode ir até 5,5 metros, podendo pesar entre 6 a 600 kg. 
+            A sua alimentação consiste tanto de carne como de peixe.
+        </p>
+        <p>
+            A maior parte das espécies de jacarés encontra-se, atualmente, em baixo risco de extinção
+            de acordo com a <a href="https://pt.wikipedia.org/wiki/Lista_Vermelha_da_IUCN">IUCN Red List</a>, no entanto,
+            o jacaré-da-china é uma das espécies de crocodilianos mais ameaçadas atualmente, encontrando-se em estado de criticamente em perigo.
+        </p>
+    </div>
+
+    <div id="geo-distribution" class="alligator w3-container w3-animate-bottom" style="display:none">
+        <h2>Distribuição geográfica</h2>    
+        <p>Os jacarés concentram-se maioritariamente no continente das Américas, especialmente na América do Sul,
+           mas também se pode encontrar uma espécie de jacarés na província de Anhui, situada na China.
+        </p>
+        <table class="w3-table-all w3-centered">
+            <caption>Localização de algumas espécies de jacarés</caption>
+            <tr>
+                <th>Espécie</th>
+                <th>Localização</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/jac-americano.jpeg" alt="Jacaré Americano" class="w3-image geo-table">
+                    <figcaption>Jacaré Americano</figcaption>
+                </td>
+                <td>
+                    <img src="./images/geo-jac-americano.png" alt="Estados Unidos" class="w3-image geo-table">
+                    <figcaption>Estados Unidos</figcaption>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/jac-chines.jpg" alt="Jacaré Chinês" class="w3-image geo-table">
+                    <figcaption>Jacaré Chinês</figcaption>
+                </td>
+                <td>
+                    <img src="./images/geo-jac-chines.png" alt="China" class="w3-image geo-table">
+                    <figcaption>China</figcaption>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/jac-pantanal.jpg" alt="Jacaré Pantanal" class="w3-image geo-table">
+                    <figcaption>Jacaré Pantanal</figcaption>
+                </td>
+                <td>
+                    <img src="./images/geo-jac-pantanal.png" alt="Norte da Bolívia e Oeste do Brasil" class="w3-image geo-table">
+                    <figcaption>Norte da Bolívia e Oeste do Brasil</figcaption>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/jac-anao.jpg" alt="Jacaré Anão" class="w3-image geo-table">
+                    <figcaption>Jacaré Anão</figcaption>
+                </td>
+                <td>
+                    <img src="./images/geo-jac-anao.png" alt="..." class="w3-image geo-table">
+                    <figcaption>Amazonas</figcaption>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/jac-acu.jpg" alt="Jacaré Açu" class="w3-image geo-table">
+                    <figcaption>Jacaré Açu</figcaption>
+                </td>
+                <td>
+                    <img src="./images/geo-jac-acu.png" alt="..." class="w3-image geo-table">
+                    <figcaption>Amazonas</figcaption>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

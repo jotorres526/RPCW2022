@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifesto>
+    <meta>
+        <titulo>TP1</titulo>
+        <data>22/02/2022</data>
+        <autor>João Tadeu Correia Torres</autor>
+        <uc>RPCW</uc>
+    </meta>
+    <resumo>
+            Para a realização do TP1, com o tema de jacarés, foi usado o W3.css, que contém elementos do HTML já definidos. A página tem uma barra de navegação no topo
+        que troca o conteúdo mostrado ao utilizador sem mudar de página (single-page). Na página inicial tem-se as principais caracteristicas do jacaré e uma breve
+        curiosidade sobre o jacaré mais velho do mundo.
+            Na segunda página, tem-se a distribuição geográfica de algumas das espécies numa tabela com imagens demonstrativas.
+            Por fim, a navigation bar tem um botão que abre uma popup com um facto aleatório.
+    </resumo>
+    <lista-ficheiros>
+        w3.css, tabs.js,index.html,custom.css
+    </lista-ficheiros>
+</manifest>
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC2: fileserver</titulo>
+        <data>2022-02-22</data>
+        <autor>
+            <id>PG47345</id>
+            <nome>João Tadeu Correia Torres</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW2022</sigla>
+            <nome>Rpresentação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>O TPC 2 tem como objetivo criar um servidor de ficheiros HTML gerados a partir de um dataset de filmes.</p>
+        <p>
+            Primeiramente, foi feito o gerador em Python (versão 3.9.7, especificamente), que irá gerar as páginas HTML
+            para cada filme/ator e para a lista de filmes/atores ordenada por ordem alfabética.
+        </p>
+        <p>
+            Em seguida foi criado o servidor em NodeJS, que fica à espera de pedidos na porta 7777, e irá dar log (na consola) em todos os pedidos
+           feitos pelos clientes, no formato: {Método HTTP} / {Ano}-{Mês}-{Dia}T{Hora}:{Minuto}
+        </p>
+        <p>
+            Ao chegar um pedido ao servidor, tenta-se verificar se a rota é suportada, para que caso não o seja, o servidor possa alertar corretamente o utilizador.
+            Caso a rota seja suportada, o módulo FS irá tentar abrir o ficheiro pedido de forma assíncrona, e, caso exista irá devolver ao utilizador a página HTML pedida, 
+            caso contrario irá alertar o utilizador para o facto do ficheiro não existir.
+        </p>
+        <p>A página principal, que lista todos os filmes por ordem alfabética, é dada pelas rotas '/' e '/filmes'.</p>
+        <p>A página principal, que lista todos os atores por ordem alfabética, é dada pela rota '/atores'.</p>
+        <p>As páginas de cada filme, são dadas pelas rotas '/filmes/fXXXX'.</p>
+        <p>As páginas de cada ator, são dadas pelas rotas '/atores/aXXXX'.</p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>generator.py</url>
+            <texto>Gerador das páginas HTML a partir do dataset</texto>
+        </resultado>
+        <resultado>
+            <url>app.js</url>
+            <texto>Servidor de ficheiros</texto>
+        </resultado>
+        <resultado>
+            <url>cinemaATP.json</url>
+            <texto>Dataset usado na geração das páginas</texto>
+        </resultado>
+    </resultados>
+</doc>

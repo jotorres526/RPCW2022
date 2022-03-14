@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC3</titulo>
+        <data>2022-03-08</data>
+        <autor>
+            <id>PG47345</id>
+            <nome>João Tadeu Correia Torres</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW2022</sigla>
+            <nome>Rpresentação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>
+            O TPC 3 tem como objetivo criar um servidor que seja capaz de fazer pedidos HTTP a um servidor externo sobre alunos, cursos e instrumentos, definidos num ficheiro
+            db.json.
+        </p>
+        <p>
+            O funcionamento do servidor é composto por, essencialmente, 4 funções. O createServer fica à escuta de pedidos de utilizadores na porta 4000.
+        </p>
+        <p>
+            Se receber um pedido GET para a "/", irá enviar ao utilizador uma pagina HTML com links para uma página com as tabelas dos 3 tipos de dados.
+        </p>
+        <p>
+            Alternativamente, caso o utilizador envie um pedido GET para "/alunos", "/cursos", "/instrumentos" irá ser apresentado uma tabela com a informação relevante ao pedido.
+        </p>
+        <p>
+            Essa informação é recolhida através de um pedido ao json-server usando o axios, que depois irá ser construido o corpo de um ficheiro HTML que no fim, será passado como
+            argumento à função genHTML para gerar a estrutura de um ficheiro HTML apropriada. 
+        </p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>app.js</url>
+            <texto>Servidor de pedidos</texto>
+        </resultado>
+        <resultado>
+            <url>db.json</url>
+            <texto>Dataset usado na criação do json-server</texto>
+        </resultado>
+    </resultados>
+</doc>

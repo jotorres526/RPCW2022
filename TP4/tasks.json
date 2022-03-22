@@ -1,0 +1,31 @@
+{
+  "tasks": [
+    {
+      "dateCreated": "2022-03-21",
+      "estado": "ativa",
+      "what": "Fazer TP4",
+      "who": "Manuel",
+      "type": "Trabalho",
+      "dateDue": "2022-03-22",
+      "id": 1
+    },
+    {
+      "dateCreated": "2022-03-21",
+      "estado": "inativa",
+      "what": "Fazer TP3",
+      "who": "Ana",
+      "type": "Trabalho",
+      "dateDue": "2022-03-15",
+      "id": 2
+    },
+    {
+      "dateCreated": "2022-03-21",
+      "estado": "ativa",
+      "what": "Fazer café",
+      "who": "António",
+      "type": "Lazer",
+      "dateDue": "2022-04-08",
+      "id": 3
+    }
+  ]
+}

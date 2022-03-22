@@ -1,0 +1,15 @@
+{
+  "name": "tp4",
+  "version": "1.0.0",
+  "description": "Trabalho prático 4 - Forms",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon tp4"
+  },
+  "author": "João Torres",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "querystring": "^0.2.1"
+  }
+}

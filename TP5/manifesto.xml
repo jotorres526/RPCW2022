@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC5</titulo>
+        <data>2022-03-22</data>
+        <autor>
+            <id>PG47345</id>
+            <nome>João Tadeu Correia Torres</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW2022</sigla>
+            <nome>Rpresentação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>
+            O TPC 5 tem como objetivo criar uma aplicação utilizando a framework express.
+        </p>
+        <p>
+            O servidor fica à escuta na porta 4000 e entrando na rota '/' o utilizador é apresentado com uma lista de todas as músicas atualmente na base de dados
+        </p>
+        <p>
+            É possível também fazer pedidos get na rota /musicas/:id obtendo assim uma página relativa a uma música especifica.
+        </p>
+        <p>
+            Fazendo um pedido get /musicas/prov/:idProv também é possível obter uma lista de músicas oriundas de uma dada província
+        </p>
+        <p>
+            As duas últimas rotas são /musicas/inserir que fornece ao utilizador um form para inserir uma nova música, e um post em /musicas que envia um post ao json-server
+        </p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>app.js</url>
+            <texto>Servidor de pedidos</texto>
+        </resultado>
+        <resultado>
+            <url>bin/www</url>
+            <texto>Ficheiro de inicialização do servidor</texto>
+        </resultado>
+        <resultado>
+            <url>public/</url>
+            <texto>Pasta com o w3.css</texto>
+        </resultado>
+        <resultado>
+            <url>views/</url>
+            <texto>Pasta com as views usadas nas funções de render do servidor</texto>
+        </resultado>
+        <resultado>
+            <url>routes/</url>
+            <texto>Pasta com as rotas a que o servidor atende.</texto>
+        </resultado>
+        <resultado>
+            <url>arq-son.json</url>
+            <texto>Dataset usado na criação do json-server</texto>
+        </resultado>
+    </resultados>
+</doc>

@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  div(class='w3-container')
+    h1= header
+    a(class='w3-btn w3-border w3-teal', href='http://localhost:4000/musicas/inserir') +
+  div(class='w3-container')
+    table(class='w3-table w3-striped w3-centered')
+      tr
+        th ID
+        th Título
+        th Província
+      each m in musicas
+        tr
+          td
+            a(href='http://localhost:4000/musicas/#{m.id}')= m.id
+          td= m.tit
+          td
+            a(href='http://localhost:4000/musicas/prov/#{m.prov}')= m.prov
+
+

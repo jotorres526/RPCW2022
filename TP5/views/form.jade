@@ -1,0 +1,30 @@
+extend layout
+
+block content
+    div(class='w3-container')
+        h1 Registo de nova música
+    form(class="w3-container", action="/musicas", method="post")
+        label Província
+        input(class="w3-input", type='text', name="prov")
+        br
+        label Título
+        input(class="w3-input", type='text', name="tit")
+        br
+        label Local
+        input(class="w3-input", type='text', name="local")
+        br
+        label Músico
+        input(class="w3-input", type='text', name="musico")
+        br
+        label Duração
+        input(class="w3-input", type='text', name="duracao")
+        br
+        label Ficheiro
+        input(class="w3-input", type='text', name="file")
+        br
+        label Tipo de ficheiro
+        input(class="w3-input", type='text', name="fileType")
+        br
+        input(class="w3-btn w3-border", type="submit", value="Registar")
+        input(class="w3-btn w3-border", type="reset", value="Limpar valores") 
+        a(class='w3-btn w3-border', href='http://localhost:4000/') Voltar ao inicio

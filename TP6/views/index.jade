@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Upload
+    form.w3-container(action="/file" method="POST" enctype="multipart/form-data")
+      label Select file
+      input.w3-input.w3-border(type="file" name="myFile")
+      label Descrição 
+      input.w3-input.w3-border(type='text', name='description')
+      br
+      input.w3-input(type="submit" value="Submit")
+
+  .w3-container 
+    h1 Lista de ficheiros
+    table.w3-table-all.w3-center
+      tr 
+        th Id
+        th Nome
+        th Data
+        th Descrição
+        th Tamanho
+        th Mimetype
+      each s in list
+        tr
+          td= s.id
+          td
+            a(href='/filestore/#{s.name}', target='_blank')= s.name
+          td= s.date
+          td= s.description
+          td= s.size
+          td= s.mimetype
+          td
+            a(href='/file/delete/#{s.id}') ❌

@@ -1,0 +1,46 @@
+extends layout
+
+block content
+  div.w3-container
+    h2= 'Nivel ' + classe.nivel + ' - ' + classe.titulo
+    p
+      b= 'Status: ' + classe.status
+    p= classe.descricao
+    if classe.nivel != 3
+      if classe.filhos.length == 0
+        h3 Esta classe não tem descendentes
+      else
+        h3 Lista de descendentes
+        table.w3-table.w3-striped
+          tr
+            th Código
+            th Título
+          for c in classe.filhos 
+            tr
+              td
+                a(href='/' + c.codigo)= c.codigo
+              td= c.titulo
+    else 
+      if classe.processosRelacionados.length == 0
+        h3 Esta classe não tem processos relacionados
+      else
+        h3 Lista de processos relacionados
+        table.w3-table
+          tr
+            th Código
+            th Título
+            th Id Relação
+          for r in classe.processosRelacionados
+            tr
+              td
+                a(href='/' + r.codigo)=r.codigo
+              td= r.titulo
+              td= r.idRel
+    br
+    a(class='w3-button w3-round-large w3-border', href='/') Voltar ao inicio
+    br
+    if classe.nivel != 1
+      a(class='w3-button w3-round-large w3-border', href='/' + classe.pai.codigo) Voltar atrás
+
+
+

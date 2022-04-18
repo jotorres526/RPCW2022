@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div.w3-container
+    h2 Lista de classes nível 1
+    table.w3-table.w3-striped
+      tr
+        th Código
+        th Título
+      for c in classes
+        tr
+          td
+            a(href='/' + c.codigo)= c.codigo
+          td= c.titulo
+  

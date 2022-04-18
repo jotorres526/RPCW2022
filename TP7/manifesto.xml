@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC7</titulo>
+        <data>2022-04-04</data>
+        <autor>
+            <id>PG47345</id>
+            <nome>João Tadeu Correia Torres</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW2022</sigla>
+            <nome>Rpresentação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>O TPC 7 tem como objetivo a resolução do exercício 2 da ficha apreesntada nas aulas</p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>app.js</url>
+            <texto>Ficheiro de configuração do servidor</texto>
+        </resultado>
+        <resultado>
+            <url>bin/www</url>
+            <texto>Ficheiro de inicialização do servidor</texto>
+        </resultado>
+        <resultado>
+            <url>public/</url>
+            <texto>Pasta com a stylesheet</texto>
+        </resultado>
+        <resultado>
+            <url>views/</url>
+            <texto>Pasta com as views usadas nas funções de render do servidor</texto>
+        </resultado>
+        <resultado>
+            <url>routes/</url>
+            <texto>Pasta com as rotas a que o servidor atende.</texto>
+        </resultado>
+    </resultados>
+</doc>
